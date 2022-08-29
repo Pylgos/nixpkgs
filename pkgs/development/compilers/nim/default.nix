@@ -144,6 +144,7 @@ in {
       install -Dt $out/bin bin/*
       ln -sf $out/nim/bin/nim $out/bin/nim
       ./install.sh $out
+      ln -sf $out/nim/lib $out/lib
       runHook postInstall
     '';
 
